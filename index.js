@@ -88,7 +88,7 @@ while (read < buffer.length) {
   process.stdout.write(`\rDecoded ${read}/${buffer.length}... `);
 }
 
-const outfile = infile + ".wav";
+const outfile = infile.replace('.dat', '.wav');
 console.log(`\nWriting output to ${outfile}...`);
 
 var wav = new WaveFile();
